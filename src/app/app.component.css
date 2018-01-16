@@ -1,0 +1,80 @@
+.no-padding-left {
+  padding-left: 0 !important;
+}
+.no-padding-left select {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+.no-padding-right {
+  padding-right: 0 !important;
+}
+.no-padding-right select {
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.no-padding-top {
+  padding-top: 0 !important;
+}
+.no-padding-top select {
+  border-top-top-radius: inherit;
+  border-bottom-top-radius: inherit;
+}
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+.no-padding-bottom select {
+  border-top-bottom-radius: inherit;
+  border-bottom-bottom-radius: inherit;
+}
+.no-padding {
+  padding: 0 !important;
+}
+@media (max-width: 575.99px) {
+  .signup, .login {
+    height: 100%;
+  }
+}
+.signup .column-left, .login .column-left, .signup .column-right, .login .column-right {
+  padding: 25px;
+  box-sizing: border-box;
+}
+.signup .column-left.column-left, .login .column-left.column-left, .signup .column-right.column-left, .login .column-right.column-left {
+  color: #fff;
+}
+@media (max-width: 575.99px) {
+  .signup .column-left.column-left, .login .column-left.column-left, .signup .column-right.column-left, .login .column-right.column-left {
+    order: 2;
+  }
+}
+.signup .column-left.column-left p, .login .column-left.column-left p, .signup .column-right.column-left p, .login .column-right.column-left p {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+}
+.signup .column-left.column-left button, .login .column-left.column-left button, .signup .column-right.column-left button, .login .column-right.column-left button {
+  width: 150px;
+}
+.signup .column-left.column-right, .login .column-left.column-right, .signup .column-right.column-right, .login .column-right.column-right {
+  background-color: #fff;
+}
+@media (max-width: 575.99px) {
+  .signup .column-left.column-right, .login .column-left.column-right, .signup .column-right.column-right, .login .column-right.column-right {
+    order: 1;
+  }
+}
+.signup .column-left.column-right .h6, .login .column-left.column-right .h6, .signup .column-right.column-right .h6, .login .column-right.column-right .h6 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 17px;
+  font-weight: bold;
+}
+.signup .column-left.column-right p, .login .column-left.column-right p, .signup .column-right.column-right p, .login .column-right.column-right p {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 16px;
+  font-weight: bold;
+  line-height: 1;
+}
+.signup .column-left.column-right form button, .login .column-left.column-right form button, .signup .column-right.column-right form button, .login .column-right.column-right form button {
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+}

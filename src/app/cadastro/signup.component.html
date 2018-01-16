@@ -1,0 +1,50 @@
+<div class="signup row no-padding">
+  <div class="col-sm-12 d-flex flex-column  align-items-left column-left">
+    <p>Já esta cadastrado?</p>
+    <button type="button" class="btn btn-success" (click)="goToLogin()">Entrar</button>
+  </div>
+  <div class="col-sm-12 d-flex flex-column column-right">
+    <p>Cadastre-se</p>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label>Usuário</label>
+        <div class="input-group">
+
+          <input type="text" name="username" class="form-control"
+             minlength="3" maxlength="16" formControlName="username">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <div class="input-group">
+
+          <input type="email" name="email" class="form-control"
+             formControlName="email">
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label>Senha</label>
+        <div class="input-group">
+
+          <input type="password" name="password" class="form-control"
+           formControlName="password">
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+
+      </div>
+
+
+      <button type="submit" [disabled]="!form.valid || disabled" class="btn btn-success">Confirmar cadastro</button>
+    </form>
+
+  </div>
+</div>

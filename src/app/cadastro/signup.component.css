@@ -1,0 +1,31 @@
+.signup {
+  width: 600px;
+  height: 100%;
+}
+@media (max-width: 575.99px) {
+  .signup {
+    width: 320px;
+    height: 100%;
+  }
+}
+.signup form .form-group:last-of-type {
+  margin: 0;
+}
+.signup form .custom-control {
+  padding-left: 20px;
+  white-space: nowrap;
+}
+.signup form .custom-control .custom-control-indicator {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 0.15rem;
+}
+@media (max-width: 575.99px) {
+  .signup form .obs-email {
+    padding-top: 4px;
+  }
+}
+.no-padding {
+  padding: 0px;
+}

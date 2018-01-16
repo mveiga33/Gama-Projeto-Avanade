@@ -1,0 +1,42 @@
+.login {
+  width: 900px;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+@media (max-width: 575.99px) {
+  .login {
+    width: 320px;
+    height: 100%;
+  }
+}
+.login .column-left, .login .column-right {
+  padding: 25px;
+  box-sizing: border-box;
+}
+@media (max-width: 575.99px) {
+  .login .column-left.column-left, .login .column-right.column-left {
+    order: 2;
+  }
+}
+.login .column-left.column-left p, .login .column-right.column-left p {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+}
+@media (max-width: 575.99px) {
+  .login .column-left.column-right, .login .column-right.column-right {
+    order: 1;
+  }
+}
+.login .column-left.column-right p, .login .column-right.column-right p {
+
+  padding-bottom: 16px;
+  font-weight: bold;
+  line-height: 1;
+}
+.login .column-left.column-right form button, .login .column-right.column-right form button {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+}
